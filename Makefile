@@ -28,7 +28,7 @@ cmake-build: ${builddir}/CMakeCache.txt
 	$(MAKE) -C ${builddir}
 
 tags:
-	git ls-files | xargs ctags
+	git ls-files | xargs ctags -f .tags
 
 install:
 	$(ECHO) "Installing…"
